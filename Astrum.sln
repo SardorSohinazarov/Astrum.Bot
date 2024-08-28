@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astrum.Console.Bot", "Astrum.Console.Bot\Astrum.Console.Bot.csproj", "{645FFC0B-7AC2-47AC-B958-4E85B9C535BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{645FFC0B-7AC2-47AC-B958-4E85B9C535BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645FFC0B-7AC2-47AC-B958-4E85B9C535BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645FFC0B-7AC2-47AC-B958-4E85B9C535BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645FFC0B-7AC2-47AC-B958-4E85B9C535BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65A31E7D-D8D5-413C-AF93-B3CA62A0E15D}
+	EndGlobalSection
+EndGlobal
