@@ -40,7 +40,7 @@ namespace Astrum.Console.Bot.Service
 
         private async Task HandleContactAsync(ITelegramBotClient telegramBotClient, Message message, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            // contactni saqla
         }
 
         private async Task HandleLocationAsync(ITelegramBotClient telegramBotClient, Message message, CancellationToken cancellationToken)
@@ -62,56 +62,6 @@ namespace Astrum.Console.Bot.Service
         private async Task HandleVideoAsync(ITelegramBotClient telegramBotClient, Message message, CancellationToken cancellationToken)
         {
             throw new NotImplementedException();
-        }
-
-        private async Task HandleTextAsync(ITelegramBotClient telegramBotClient, Message message, CancellationToken cancellationToken)
-        {
-            #region Keyboard button
-            /* var buttonuz = new KeyboardButton("Uz");
-             var buttonru = new KeyboardButton("Ru");
-             var buttonen = new KeyboardButton("Eu");
-
-             var replyMarkup = new ReplyKeyboardMarkup(
-                 new List<List<KeyboardButton>>()
-                 {
-                     new List<KeyboardButton>()
-                     {
-                         buttonuz,buttonru
-                     },
-                     new List<KeyboardButton>()
-                     {
-                         buttonen
-                     }
-             });*/
-            #endregion
-
-            var buttonuz = new InlineKeyboardButton("Uz"){ CallbackData = "uz"};
-            var buttonru = new InlineKeyboardButton("Ru"){ CallbackData = "re"};
-            var buttonen = new InlineKeyboardButton("En"){ CallbackData = "en"};
-
-            var reply = new InlineKeyboardMarkup(
-                new InlineKeyboardButton[]
-                {
-                    buttonuz,
-                    buttonru,
-                    buttonen
-                }
-            );
-
-            if(message.Text == "/start")
-            {
-                try{
-                    await telegramBotClient.SendTextMessageAsync(
-                    chatId: message.Chat.Id,
-                    text: "Tilni tanlang",
-                    replyToMessageId: message.MessageId,
-                    replyMarkup: reply
-                    );
-                }catch( Exception e )
-                {
-                    System.Console.WriteLine(e.Message);
-                }
-            }
         }
     }
 }

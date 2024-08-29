@@ -6,7 +6,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        var botclient = new TelegramBotClient("{token}");
+        var botclient = new TelegramBotClient("7240882379:AAGNVUaJcApUqh-qKU0SS8o_zwA_g69X7Wk");
 
         var updateHandler = new UpdateHandler();
 
