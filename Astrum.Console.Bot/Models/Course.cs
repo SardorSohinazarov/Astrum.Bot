@@ -8,7 +8,7 @@ namespace Astrum.Console.Bot.Models
 {
     public class Course
     {
-        //Qales
+        //Qales endi?
         public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
